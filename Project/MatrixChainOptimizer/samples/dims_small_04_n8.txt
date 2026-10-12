@@ -1,0 +1,6 @@
+# Small chain - 8 matrices
+# Format: dimensions only. Matrix i has size p[i-1] x p[i].
+# 8 matrices.
+
+DIMS
+32 148 80 145 48 28 150 148 50

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matrix Chain Multiplication Optimizer</title>
+<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">MCM</span>
+    <div class="brand-text">
+      <div class="brand-title">Matrix Chain Multiplication Optimizer</div>
+      <div class="brand-sub">Dynamic Programming for the DSA-3 project</div>
+    </div>
+  </div>
+  <nav class="topnav">
+    <a href="#upload">Upload</a>
+    <a href="#samples">Sample Files</a>
+    <a href="#result" id="nav-result" class="hidden">Result</a>
+    <a href="#learn" id="nav-learn" class="hidden">Learn More</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============================================================ HERO -->
+  <section class="hero">
+    <h1>Find the cheapest way to multiply a chain of matrices</h1>
+    <p>
+      Upload a <code>.txt</code> file describing your matrices. The tool computes the optimal
+      multiplication order with Dynamic Programming, shows every multiplication it performs,
+      and explains exactly how the algorithm found that order.
+    </p>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">O(n&sup3;)</span><span class="stat-label">time complexity</span></div>
+      <div class="stat"><span class="stat-num">O(n&sup2;)</span><span class="stat-label">space complexity</span></div>
+      <div class="stat"><span class="stat-num">up to 99%</span><span class="stat-label">multiplications saved</span></div>
+    </div>
+  </section>
+
+  <!-- ============================================================ UPLOAD -->
+  <section id="upload" class="panel">
+    <h2><span class="step-no">1</span> Upload your matrix chain</h2>
+    <p class="panel-desc">
+      Drop a <code>.txt</code> file here, or click to choose one. Need a file to try? Open
+      <a href="#samples">Sample Files</a> below and download one first.
+    </p>
+
+    <div id="dropzone" class="dropzone">
+      <input type="file" id="fileInput" accept=".txt" hidden>
+      <div class="dropzone-inner">
+        <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 16V4M12 4L7 9M12 4l5 5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="dropzone-text">Drag &amp; drop a .txt file here, or <span class="link-like">browse</span></div>
+        <div class="dropzone-hint">Accepted format: .txt &middot; max 5 MB</div>
+      </div>
+    </div>
+
+    <div id="fileMeta" class="file-meta hidden">
+      <span id="fileMetaName"></span>
+      <button id="clearFile" class="btn-text">Remove</button>
+    </div>
+
+    <div class="format-toggle">
+      <button class="format-btn active" data-target="fmt-dims">Dimensions-only format</button>
+      <button class="format-btn" data-target="fmt-matrices">Full matrices format</button>
+    </div>
+    <div id="fmt-dims" class="format-box">
+<pre># DIMS p0 p1 p2 ... pn   -> matrix i is size p[i-1] x p[i]
+DIMS 10 30 5 60</pre>
+      <p>Fast and simple. Use this when you only care about sizes, or your chain is long.</p>
+    </div>
+    <div id="fmt-matrices" class="format-box hidden">
+<pre># first line: number of matrices
+3
+# then for each matrix: rows cols, then that many rows of numbers
+2 3
+1 2 3
+4 5 6
+3 4
+1 0 0 1
+0 1 0 1
+0 0 1 1</pre>
+      <p>Use this when you want to see the <em>actual numbers</em> multiplied, not just the sizes.</p>
+    </div>
+
+    <button id="analyzeBtn" class="btn-primary" disabled>Analyze this file</button>
+    <div id="uploadError" class="error-box hidden"></div>
+  </section>
+
+  <!-- ============================================================ SAMPLES -->
+  <section id="samples" class="panel">
+    <h2><span class="step-no">2</span> Or try a sample file</h2>
+    <p class="panel-desc">
+      53 ready-made <code>.txt</code> files: textbook examples with known answers, readable
+      matrices you can check by hand, and large chains to test performance.
+    </p>
+    <div class="sample-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="explicit">Full matrices</button>
+      <button class="filter-btn" data-filter="dims">Dimensions only</button>
+      <button class="filter-btn" data-filter="invalid">Invalid (error demo)</button>
+    </div>
+    <div id="sampleList" class="sample-grid">
+      <div class="loading">Loading sample list&hellip;</div>
+    </div>
+
+    <div class="dataset-run-bar">
+      <button id="runDatasetBtn" class="btn-secondary">Run the entire dataset</button>
+      <span class="dataset-run-hint">Solves every sample file in one pass and shows one results table &mdash; proof the algorithm holds up across the whole dataset, not just one file.</span>
+    </div>
+    <div id="datasetRunResult"></div>
+  </section>
+
+  <!-- ============================================================ RESULT -->
+  <section id="result" class="panel hidden">
+    <h2><span class="step-no">3</span> Result</h2>
+    <div id="resultBody"></div>
+  </section>
+
+  <!-- ============================================================ LEARN MORE -->
+  <section id="learn" class="panel hidden">
+    <h2>How Dynamic Programming found this order</h2>
+    <div id="learnBody"></div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Built for the DSA-3 project. Matrix chain multiplication, solved with dynamic programming.</p>
+</footer>
+
+<script src="/js/app.js"></script>
+</body>
+</html>

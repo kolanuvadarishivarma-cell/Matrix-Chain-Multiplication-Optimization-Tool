@@ -1,0 +1,6 @@
+# Pattern test - 14 matrices
+# Format: dimensions only. Matrix i has size p[i-1] x p[i].
+# 14 matrices.
+
+DIMS
+200 4 200 4 200 4 200 4 200 4 200 4 200 4 200

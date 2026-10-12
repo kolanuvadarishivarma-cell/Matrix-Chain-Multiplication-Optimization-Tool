@@ -1,0 +1,6 @@
+# Small chain - 5 matrices
+# Format: dimensions only. Matrix i has size p[i-1] x p[i].
+# 5 matrices.
+
+DIMS
+13 144 36 76 109 38

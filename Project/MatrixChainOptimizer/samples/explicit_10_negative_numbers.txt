@@ -1,0 +1,23 @@
+# Matrices that contain negative numbers
+# Format: full matrices (real numbers).
+# First number = how many matrices. Then for each matrix: rows, columns, and its rows of numbers.
+
+3
+
+# A1
+3 4
+1 6 -4 5
+-3 -1 7 8
+7 -4 0 7
+
+# A2
+4 2
+2 -1
+-2 7
+3 6
+5 4
+
+# A3
+2 5
+-5 -2 -3 8 9
+2 -5 1 4 3

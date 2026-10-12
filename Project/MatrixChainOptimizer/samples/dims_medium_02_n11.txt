@@ -1,0 +1,6 @@
+# Medium chain - 11 matrices
+# Format: dimensions only. Matrix i has size p[i-1] x p[i].
+# 11 matrices.
+
+DIMS
+250 87 269 16 110 275 190 80 283 18 275 157

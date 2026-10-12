@@ -1,0 +1,7 @@
+# Textbook example - 10x20, 20x50, 50x1, 1x100
+# Format: dimensions only. Matrix i has size p[i-1] x p[i].
+# 4 matrices.
+# Known answer: 2,200 multiplications.
+
+DIMS
+10 20 50 1 100

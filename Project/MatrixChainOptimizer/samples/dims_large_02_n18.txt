@@ -1,0 +1,6 @@
+# Large chain - 18 matrices
+# Format: dimensions only. Matrix i has size p[i-1] x p[i].
+# 18 matrices.
+
+DIMS
+113 487 169 331 166 281 398 115 158 238 266 354 101 148 187 421 19 138 28

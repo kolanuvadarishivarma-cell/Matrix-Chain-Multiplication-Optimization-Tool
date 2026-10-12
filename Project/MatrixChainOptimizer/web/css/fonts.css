@@ -1,0 +1,40 @@
+/* Fonts are bundled in web/fonts/ so the page works with no internet connection. */
+
+@font-face {
+  font-family: "Newsreader";
+  src: url("/fonts/Newsreader-Variable.woff2") format("woff2-variations"),
+       url("/fonts/Newsreader-Variable.woff2") format("woff2");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Newsreader";
+  src: url("/fonts/Newsreader-Italic-Variable.woff2") format("woff2-variations"),
+       url("/fonts/Newsreader-Italic-Variable.woff2") format("woff2");
+  font-weight: 300 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("/fonts/IBMPlexSans-Variable.woff2") format("woff2-variations"),
+       url("/fonts/IBMPlexSans-Variable.woff2") format("woff2");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/IBMPlexMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/IBMPlexMono-Medium.woff2") format("woff2");
+  font-weight: 500 700;
+  font-style: normal;
+  font-display: swap;
+}

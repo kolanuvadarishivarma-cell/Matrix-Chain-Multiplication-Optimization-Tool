@@ -1,0 +1,7 @@
+# Textbook example (CLRS) - 6 matrices
+# Format: dimensions only. Matrix i has size p[i-1] x p[i].
+# 6 matrices.
+# Known answer: 15,125 multiplications, order ((A1 x (A2 x A3)) x ((A4 x A5) x A6)).
+
+DIMS
+30 35 15 5 10 20 25

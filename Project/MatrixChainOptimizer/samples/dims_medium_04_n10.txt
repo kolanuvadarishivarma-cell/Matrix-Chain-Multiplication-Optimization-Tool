@@ -1,0 +1,6 @@
+# Medium chain - 10 matrices
+# Format: dimensions only. Matrix i has size p[i-1] x p[i].
+# 10 matrices.
+
+DIMS
+104 127 210 121 107 270 257 187 19 19 148

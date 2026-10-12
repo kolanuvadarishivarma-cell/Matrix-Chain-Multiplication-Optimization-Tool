@@ -1,0 +1,3 @@
+# Invalid demo - only one matrix
+# You need at least two matrices to have anything to multiply.
+DIMS 10 20

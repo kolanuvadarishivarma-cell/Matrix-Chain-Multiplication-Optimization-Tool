@@ -1,0 +1,7 @@
+# PPT example (slide 8) - dimensions only
+# Format: dimensions only. Matrix i has size p[i-1] x p[i].
+# 3 matrices.
+# Known answer: 4,500 vs worst 27,000 (83.33% saved).
+
+DIMS
+10 30 5 60

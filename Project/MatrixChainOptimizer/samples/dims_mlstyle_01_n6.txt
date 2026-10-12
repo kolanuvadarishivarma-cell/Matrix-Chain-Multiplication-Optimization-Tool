@@ -1,0 +1,6 @@
+# Machine-learning style layer sizes - 6 matrices
+# Format: dimensions only. Matrix i has size p[i-1] x p[i].
+# 6 matrices.
+
+DIMS
+32 128 2048 1024 1024 1024 2048

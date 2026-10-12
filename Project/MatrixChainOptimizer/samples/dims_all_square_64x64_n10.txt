@@ -1,0 +1,6 @@
+# Pattern test - 10 matrices
+# Format: dimensions only. Matrix i has size p[i-1] x p[i].
+# 10 matrices.
+
+DIMS
+64 64 64 64 64 64 64 64 64 64 64

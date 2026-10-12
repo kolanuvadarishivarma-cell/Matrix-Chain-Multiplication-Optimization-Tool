@@ -1,0 +1,9 @@
+# Invalid demo - the file ends too early
+# A2 says it is 3x2 (6 numbers) but only 4 numbers are given.
+2
+2 3
+1 2 3
+4 5 6
+3 2
+1 2
+3 4

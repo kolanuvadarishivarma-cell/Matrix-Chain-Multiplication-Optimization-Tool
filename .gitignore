@@ -1,0 +1,10 @@
+# Compiled Java class files
+*.class
+out/
+bin/
+
+# macOS metadata
+.DS_Store
+
+# Temporary / OS files
+Thumbs.db

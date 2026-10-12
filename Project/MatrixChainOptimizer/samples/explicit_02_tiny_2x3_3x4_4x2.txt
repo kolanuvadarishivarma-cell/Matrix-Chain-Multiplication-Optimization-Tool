@@ -1,0 +1,23 @@
+# Tiny readable chain - 2x3, 3x4, 4x2
+# Format: full matrices (real numbers).
+# First number = how many matrices. Then for each matrix: rows, columns, and its rows of numbers.
+
+3
+
+# A1
+2 3
+2 0 2
+2 6 9
+
+# A2
+3 4
+7 8 0 4
+3 8 5 8
+1 7 6 2
+
+# A3
+4 2
+5 2
+8 0
+7 0
+0 1

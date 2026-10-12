@@ -1,0 +1,6 @@
+# Real-sized chain - 6 matrices
+# Format: dimensions only. Matrix i has size p[i-1] x p[i].
+# 6 matrices.
+
+DIMS
+16 38 29 19 15 44 54

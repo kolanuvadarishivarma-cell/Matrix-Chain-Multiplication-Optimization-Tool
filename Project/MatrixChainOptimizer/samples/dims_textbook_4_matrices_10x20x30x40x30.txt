@@ -1,0 +1,7 @@
+# Textbook example - 4 matrices
+# Format: dimensions only. Matrix i has size p[i-1] x p[i].
+# 4 matrices.
+# Known answer: 30,000 multiplications.
+
+DIMS
+10 20 30 40 30
